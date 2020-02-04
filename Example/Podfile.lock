@@ -1,0 +1,16 @@
+PODS:
+  - USE_CreateCreditCardController (0.1.2)
+
+DEPENDENCIES:
+  - USE_CreateCreditCardController (from `../`)
+
+EXTERNAL SOURCES:
+  USE_CreateCreditCardController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  USE_CreateCreditCardController: 8d60d24ae0827659649e0bf0d06b9a311b537122
+
+PODFILE CHECKSUM: 328d0066f27aa5f2fd65df1a3511dfc3cb291f7f
+
+COCOAPODS: 1.5.3

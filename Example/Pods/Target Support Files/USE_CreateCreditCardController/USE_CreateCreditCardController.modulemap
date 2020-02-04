@@ -1,0 +1,6 @@
+framework module USE_CreateCreditCardController {
+  umbrella header "USE_CreateCreditCardController-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'USE_CreateCreditCardController_Example' do
+  pod 'USE_CreateCreditCardController', :path => '../'
+
+  target 'USE_CreateCreditCardController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

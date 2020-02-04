@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="USE_CreateCreditCardController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uap-TT-Y5b">
+                                <rect key="frame" x="30" y="58" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fg-Ji-XuA">
+                                <rect key="frame" x="30" y="99" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cp5-bk-mbs">
+                                <rect key="frame" x="30" y="140" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6U-vG-oyC">
+                                <rect key="frame" x="30" y="181" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEa-Qv-rKB">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="Add card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddCardPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AzL-eN-P5s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.41109186410903931" green="0.6961054801940918" blue="0.56861060857772827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="u6U-vG-oyC" firstAttribute="top" secondItem="cp5-bk-mbs" secondAttribute="bottom" constant="20" id="CfG-lV-Ogb"/>
+                            <constraint firstItem="u6U-vG-oyC" firstAttribute="leading" secondItem="cp5-bk-mbs" secondAttribute="leading" id="Ct6-d2-eVU"/>
+                            <constraint firstItem="vEa-Qv-rKB" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="GIE-gn-cRs"/>
+                            <constraint firstItem="2fg-Ji-XuA" firstAttribute="top" secondItem="uap-TT-Y5b" secondAttribute="bottom" constant="20" id="PvD-zj-ocO"/>
+                            <constraint firstItem="uap-TT-Y5b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="Zvp-gu-wOb"/>
+                            <constraint firstItem="vEa-Qv-rKB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="iYc-Wd-3bq"/>
+                            <constraint firstItem="2fg-Ji-XuA" firstAttribute="leading" secondItem="uap-TT-Y5b" secondAttribute="leading" id="lM8-Ae-g3R"/>
+                            <constraint firstItem="uap-TT-Y5b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="tRd-7V-9zK"/>
+                            <constraint firstItem="cp5-bk-mbs" firstAttribute="leading" secondItem="2fg-Ji-XuA" secondAttribute="leading" id="xEB-Z1-vGv"/>
+                            <constraint firstItem="cp5-bk-mbs" firstAttribute="top" secondItem="2fg-Ji-XuA" secondAttribute="bottom" constant="20" id="xNn-e3-lXR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCVV" destination="u6U-vG-oyC" id="z7G-2l-VKZ"/>
+                        <outlet property="lblExpiration" destination="cp5-bk-mbs" id="rWB-e1-k4e"/>
+                        <outlet property="lblNumber" destination="uap-TT-Y5b" id="Hq5-xg-iR6"/>
+                        <outlet property="lblOwner" destination="2fg-Ji-XuA" id="zzd-2e-f4o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
